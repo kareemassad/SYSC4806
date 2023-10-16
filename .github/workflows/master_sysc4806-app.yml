@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: lab5-jar
-          path: Labs/Lab5/out/artifacts/Lab5_jar/lab5.jar
+          path: '${{ github.workspace }}/Labs/lab5/target/*.jar'
 
   deploy:
     runs-on: windows-latest
